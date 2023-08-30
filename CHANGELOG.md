@@ -18,7 +18,7 @@ Read our [guidelines for writing a good changelog entry](https://github.com/biom
 ### JavaScript APIs
 ### Linter
 
-### Enhancements
+#### Enhancements
 
 - [useTemplate](https://biomejs.dev/lint/rules/useTemplate/) now reports all string concatenations.
 
@@ -39,7 +39,7 @@ Read our [guidelines for writing a good changelog entry](https://github.com/biom
   + `\`${v}\``;
   ```
 
-### Bug fixes
+#### Bug fixes
 
 - Fix [rome#4713](https://github.com/rome/tools/issues/4713).
 
@@ -58,6 +58,10 @@ Read our [guidelines for writing a good changelog entry](https://github.com/biom
   - a + b + "px"
   + `${a + b}px`
    ```
+
+- Fix [rome#4616](https://github.com/rome/tools/issues/4616)
+
+  Previously [noUnreachableSuper](https://biomejs.dev/lint/rules/noUnreachableSuper/) reported valid codes with complex nesting of control flow structures.
 
 ### Parser
 ### VSCode
